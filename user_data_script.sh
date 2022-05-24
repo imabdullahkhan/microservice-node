@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+!/bin/bash -ex
 # output user data logs into a separate file for debugging
 exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
 # download nvm
@@ -15,9 +15,10 @@ export NVM_DIR="/.nvm"
 sudo yum upgrade
 #install git
 sudo yum install git -y
-cd /home/ec2-user
-# get source code from githubt
-git clone https://github.com/felixyu9/auto-scaling-nodejs-app
+cd /home/ubuntu
+# get source code from github
+git clone https://github.com/imabdullahkhan/auto-scaling-nodejs-app
+# git clone https://<ASSCESS_TOKEN>@github.com/<USER_NAME>/<REPO>.git
 #get in project dir
 cd auto-scaling-nodejs-app
 #give permission
