@@ -31,6 +31,7 @@ Lets Start with BASIC create simple node application which will be hosted on EC2
   Select the Sub-nets
   Attach To new Load Balancer
   Change the Name if you need
+  Create load-Balancer
   Choose Internet Facing
   Select Group Size 
   Enter Desired capacity
@@ -40,4 +41,20 @@ Lets Start with BASIC create simple node application which will be hosted on EC2
   Click on create Auto-Scaling group button
   Wait For Some-Time around 3 Minutes  and then go to Ec2 
   Copy EC2 instances and Load-Balancer IPs in order to check the every thing working properly
+  
+Let Build and push the code using Code-Deploy
+Create Role EC2 code deploy Access
+Installing the Code deploy Agent into my machine 
+Go to Code Deploy And Create Application
+Compute Plateform  EC2/on-Premise 
+Create Deployment Group 
+  Enter Deployment Group 
+  Enter Service Role
+  Deployment Type
+  Environment Config
+  Deployment Settings
+  Load-Balancer
+Create  AWS Code Pipeline 
+  Connect to GITHUB 
+  Create appspec.yml
   
