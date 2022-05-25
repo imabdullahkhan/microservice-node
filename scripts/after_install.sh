@@ -3,4 +3,4 @@
 
 cd /home/ubuntu/microservice-node/
 
-npm install
+sudo npm install
