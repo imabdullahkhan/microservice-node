@@ -4,8 +4,8 @@ const app = express();
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
-const patientServiceResponder = new cote.Responder({ name: "Patient Service" });
-const bloodServiceRequester = new cote.Requester({ name: "Blood Service" });
+const patientServiceResponder = new cote.Responder({ name: "Patient Service", key :"patient" });
+const bloodServiceRequester = new cote.Requester({ name: "Blood Service",key :"blood" });
 const patients = [
   {
     id: 1,
@@ -19,9 +19,9 @@ const patients = [
   }
 ]
 
-// patientServiceResponder.on("patient", req => {
-//   return Promise.resolve(patients);
-// })
+patientServiceResponder.on("patient", req => {
+  return Promise.resolve(patients);
+})
 app.get("/available/blood", async (req, res) => {
   const availableBlood = await bloodServiceRequester.send({ type: "blood" });
   res.json(availableBlood).status(200);

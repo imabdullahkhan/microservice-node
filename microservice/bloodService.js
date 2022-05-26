@@ -4,8 +4,8 @@ const app = express();
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
-const bloodService = new cote.Responder({ name: "Blood Service" });
-const patientServiceRequester = new cote.Requester({ name: "Patient Service" });
+const bloodService = new cote.Responder({ name: "Blood Service", key: "blood" });
+const patientServiceRequester = new cote.Requester({ name: "Patient Service", key: "patient" });
 const blood = [
   {
     id: 1,
