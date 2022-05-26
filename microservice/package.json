@@ -1,0 +1,10 @@
+{
+  "name": "auto-scaling-nodejs-app",
+  "version": "1.0.0",
+  "author": "felixyu",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cote": "^1.0.3",
+    "express": "4.17.1"
+  }
+}
