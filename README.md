@@ -46,7 +46,7 @@ Let Build and push the code using Code-Deploy
 Create Role EC2 code deploy Access
 Installing the Code deploy Agent into my machine 
 Go to Code Deploy And Create Application
-Compute Plateform  EC2/on-Premise 
+Compute Platform  EC2/on-Premise 
 Create Deployment Group 
   Enter Deployment Group 
   Enter Service Role
@@ -57,4 +57,10 @@ Create Deployment Group
 Create  AWS Code Pipeline 
   Connect to GITHUB 
   Create appspec.yml
-  
+  Create after_install
+  Create before_install
+  Create application install
+
+Lets Create MicroService and Use the Elastic Cache as a Service Discovery and Check the load-balancing and auto-scaling 
+
+
